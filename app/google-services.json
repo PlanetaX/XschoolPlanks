@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1084369136359",
+    "firebase_url": "https://xschoolplanks.firebaseio.com",
+    "project_id": "xschoolplanks",
+    "storage_bucket": "xschoolplanks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084369136359:android:489fefafa7d7f76b",
+        "android_client_info": {
+          "package_name": "planks.xschool.com.xschoolplanks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084369136359-p7qjafigtfga798p9rmg6lg0ne7esdl6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "planks.xschool.com.xschoolplanks",
+            "certificate_hash": "9365d3462c4b6224ea6e610008060a799ce97fc5"
+          }
+        },
+        {
+          "client_id": "1084369136359-f5m2m5g49h2o9b2ht37fqf2eq1cbhflp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNTvJGbwccMYy0llhWmOoAkxujh_OYUeI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084369136359-f5m2m5g49h2o9b2ht37fqf2eq1cbhflp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
