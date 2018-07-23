@@ -12,8 +12,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import planks.xschool.com.xschoolplanks.model.User;
 
 public class MainActivity extends AppCompatActivity {
+
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     private DatabaseReference userRef  = reference.child("Database").child("Users");
+
     private Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
