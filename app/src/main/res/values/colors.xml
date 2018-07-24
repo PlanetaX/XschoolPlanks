@@ -4,6 +4,7 @@
     <!--Cores principais-->
     <color name="colorPrimary">#191919</color>
     <color name="colorPrimaryDark">#000000</color>
+    <color name="back">#252525</color>
 
     <!--Cores de alto contraste-->
     <color name="colorAccent">#0000FF</color>
