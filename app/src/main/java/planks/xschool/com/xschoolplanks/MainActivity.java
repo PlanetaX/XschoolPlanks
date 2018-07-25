@@ -17,17 +17,19 @@ import planks.xschool.com.xschoolplanks.model.User;
 public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-    private DatabaseReference userRef  = reference.child("Database").child("Users");
+    //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*
         User user = new User();
         user.setUserName("Anyone");
         String nome = user.getUserName();
         userRef.child("Usuários").setValue(nome);
+        */
 
     }
 }
