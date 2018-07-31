@@ -8,9 +8,11 @@
 
     <!--Cores de alto contraste-->
     <color name="colorAccent">#0000FF</color>
+    <color name="colorGreen">#7bb737</color>
+    <color name="colorOrange">#d88406</color>
 
     <!--Cores Primárias-->
     <color name="colorBlack">#000000</color>
-    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite">#ffffff</color>
 
 </resources>
