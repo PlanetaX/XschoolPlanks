@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +19,10 @@ import planks.xschool.com.xschoolplanks.model.User;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TextView hud;
+    private RelativeLayout rl_hud;
+    private Boolean hudbol = true;
+
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
@@ -26,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        hud = (TextView) findViewById(R.id.hud);
+        rl_hud = (RelativeLayout) findViewById(R.id.rl_hud);
+
+        hud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            }
+        });
 
         //FRAGMENTO EXEMPLO
         /*

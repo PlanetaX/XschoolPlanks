@@ -18,6 +18,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <RelativeLayout
+            android:id="@+id/rl_downbar"
             android:layout_width="match_parent"
             android:layout_height="94dp"
             android:layout_alignParentBottom="true"
@@ -80,6 +81,18 @@
                 android:textColor="@color/colorWhite"
                 android:textSize="36sp"
                 android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_hud"
+            android:layout_width="163dp"
+            android:layout_height="108dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="104dp"
+            android:layout_marginEnd="12dp"
+            android:background="#FFF">
 
         </RelativeLayout>
 
