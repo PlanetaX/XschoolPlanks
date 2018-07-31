@@ -1,5 +1,6 @@
 package planks.xschool.com.xschoolplanks;
 
+import android.app.Activity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import planks.xschool.com.xschoolplanks.model.User;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private TextView hud;
     private RelativeLayout rl_hud;
@@ -32,14 +33,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        hud = (TextView) findViewById(R.id.hud);
-        rl_hud = (RelativeLayout) findViewById(R.id.rl_hud);
-
-        hud.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
 
         //FRAGMENTO EXEMPLO
         /*
