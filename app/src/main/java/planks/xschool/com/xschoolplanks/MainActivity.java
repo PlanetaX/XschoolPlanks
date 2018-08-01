@@ -20,10 +20,6 @@ import planks.xschool.com.xschoolplanks.model.User;
 
 public class MainActivity extends Activity {
 
-    private TextView hud;
-    private RelativeLayout rl_hud;
-    private Boolean hudbol = true;
-
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
@@ -31,8 +27,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
         //FRAGMENTO EXEMPLO
         /*
