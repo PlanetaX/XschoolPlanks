@@ -30,6 +30,14 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //checkUser();
+        //Esse método deverá checar se o usuário está logado no planks
+        //Se não estiver, deve-se iniciar o modo anônimo
+
+        //checkOnline();
+        //Esse método deverá checar se o usuário está conectado na internet
+        //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
+
         //FRAGMENTO EXEMPLO
         /*
         login = (Button) findViewById(R.id.btn_logar);
