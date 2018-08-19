@@ -26,13 +26,15 @@ public class MainActivity extends Activity {
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
     private RelativeLayout rl_hud;
+    private TextView hud;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
+        rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
+        hud = (TextView) findViewById(R.id.hud);
 
         //checkUser();
         //Esse método deverá checar se o usuário está logado no planks
@@ -41,6 +43,13 @@ public class MainActivity extends Activity {
         //checkOnline();
         //Esse método deverá checar se o usuário está conectado na internet
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
+
+        hud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //OpenHud
+            }
+        });
 
         //FRAGMENTO EXEMPLO
         /*
