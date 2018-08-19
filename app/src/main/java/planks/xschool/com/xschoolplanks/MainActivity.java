@@ -25,10 +25,14 @@ public class MainActivity extends Activity {
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
+    private RelativeLayout rl_hud;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
 
         //checkUser();
         //Esse método deverá checar se o usuário está logado no planks
