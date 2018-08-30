@@ -86,9 +86,6 @@ public class MainActivity extends Activity {
         userRef.child("Usuários").setValue(nome);
         */
 
-        //Comentário
-        //rola
-
 
 
     }
