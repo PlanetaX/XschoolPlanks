@@ -102,6 +102,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/rl_hud_id"
             android:layout_width="140dp"
             android:layout_height="327dp"
             android:layout_alignParentBottom="true"
