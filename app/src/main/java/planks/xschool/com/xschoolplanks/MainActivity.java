@@ -26,8 +26,8 @@ public class MainActivity extends Activity {
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
     private RelativeLayout rl_hud;
-    private TextView hud;
-    private TextView hudt;
+    private TextView hud; //Botão hud
+    private TextView option01; //Hud em si deve ser ListView c/adapter
     private boolean ishudclosed = true;
 
 
@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 
         //rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
         hud = (TextView) findViewById(R.id.hud);
-        hudt = (TextView) findViewById(R.id.tv_hud_id);
+        option01 = (TextView) findViewById(R.id.tv_hud_op1_id);
 
         //TODO checkUser();
         //Esse método deverá checar se o usuário está logado no planks
@@ -54,19 +54,19 @@ public class MainActivity extends Activity {
                 //TODO OpenHud
                 //Exemplo de OpenHud com Boolean (ishudclosed, começa true)
                 if(ishudclosed) {
-                    hudt.setText("Hud Open");
+                    option01.setText("Hud Option 01");
                     ishudclosed = false;
                 }else{
-                    hudt.setText("");
+                    option01.setText("");
                     ishudclosed = true;
                 }
             }
         });
 
-        hudt.setOnClickListener(new View.OnClickListener() {
+        option01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toastShort("Clicou no Hud");
+                toastShort("Clicou na Opção 1");
             }
         });
 
