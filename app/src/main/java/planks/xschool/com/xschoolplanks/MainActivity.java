@@ -29,7 +29,7 @@ import java.util.List;
 
 import planks.xschool.com.xschoolplanks.model.User;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO OpenHud
+                //TODO OpenHud();
             }
         });
 
@@ -104,5 +104,9 @@ public class MainActivity extends Activity {
 
     public void toastShort(String str){
         Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
+    }
+
+    private void openHud(){
+        FragmentManager fragmentManager = getSupportFragmentManager();
     }
 }
