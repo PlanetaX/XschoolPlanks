@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //TODO rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
+        //rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
         hud = (TextView) findViewById(R.id.hud);
         hudt = (TextView) findViewById(R.id.tv_hud_id);
 
@@ -52,6 +52,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 //TODO OpenHud
+                //Exemplo de OpenHud com Boolean (ishudclosed, começa true)
                 if(ishudclosed) {
                     hudt.setText("Hud Open");
                     ishudclosed = false;
@@ -59,6 +60,13 @@ public class MainActivity extends Activity {
                     hudt.setText("");
                     ishudclosed = true;
                 }
+            }
+        });
+
+        hudt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toastShort("Clicou no Hud");
             }
         });
 
@@ -98,5 +106,9 @@ public class MainActivity extends Activity {
         */
 
 
+    }
+
+    public void toastShort(String str){
+        Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
     }
 }
