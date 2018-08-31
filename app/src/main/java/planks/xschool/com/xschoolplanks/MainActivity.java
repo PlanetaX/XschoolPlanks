@@ -3,8 +3,13 @@ package planks.xschool.com.xschoolplanks;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +23,10 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
+import java.util.List;
+
 import planks.xschool.com.xschoolplanks.model.User;
 
 public class MainActivity extends Activity {
@@ -27,8 +36,8 @@ public class MainActivity extends Activity {
 
     private RelativeLayout rl_hud;
     private TextView hud; //Botão hud
-    private TextView option01; //Hud em si deve ser ListView c/adapter
-    private boolean ishudclosed = true;
+    //private TextView option01; //Hud em si deve ser ListView c/adapter
+    private boolean status = true;
 
 
     @Override
@@ -36,9 +45,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
+        rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
         hud = (TextView) findViewById(R.id.hud);
-        option01 = (TextView) findViewById(R.id.tv_hud_op1_id);
 
         //TODO checkUser();
         //Esse método deverá checar se o usuário está logado no planks
@@ -48,32 +56,18 @@ public class MainActivity extends Activity {
         //Esse método deverá checar se o usuário está conectado na internet
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
 
+
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //TODO OpenHud
-                //Exemplo de OpenHud com Boolean (ishudclosed, começa true)
-                if(ishudclosed) {
-                    option01.setText("Hud Option 01");
-                    ishudclosed = false;
-                }else{
-                    option01.setText("");
-                    ishudclosed = true;
-                }
             }
         });
 
-        option01.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                toastShort("Clicou na Opção 1");
-            }
-        });
 
         //FRAGMENTO EXEMPLO
         /*
-        login = (Button) findViewById(R.id.btn_logar);
-        login.setOnClickListener(new View.OnClickListener() {
+        hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
