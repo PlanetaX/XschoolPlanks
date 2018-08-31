@@ -27,6 +27,9 @@ public class MainActivity extends Activity {
 
     private RelativeLayout rl_hud;
     private TextView hud;
+    private TextView hudt;
+    private boolean ishudclosed = true;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,7 @@ public class MainActivity extends Activity {
 
         //TODO rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
         hud = (TextView) findViewById(R.id.hud);
+        hudt = (TextView) findViewById(R.id.tv_hud_id);
 
         //TODO checkUser();
         //Esse método deverá checar se o usuário está logado no planks
@@ -47,7 +51,14 @@ public class MainActivity extends Activity {
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //OpenHud
+                //TODO OpenHud
+                if(ishudclosed) {
+                    hudt.setText("Hud Open");
+                    ishudclosed = false;
+                }else{
+                    hudt.setText("");
+                    ishudclosed = true;
+                }
             }
         });
 
