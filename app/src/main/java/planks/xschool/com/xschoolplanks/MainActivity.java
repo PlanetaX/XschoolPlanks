@@ -33,14 +33,14 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
+        //TODO rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
         hud = (TextView) findViewById(R.id.hud);
 
-        //checkUser();
+        //TODO checkUser();
         //Esse método deverá checar se o usuário está logado no planks
         //Se não estiver, deve-se iniciar o modo anônimo
 
-        //checkOnline();
+        //TODO checkOnline();
         //Esse método deverá checar se o usuário está conectado na internet
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
 
