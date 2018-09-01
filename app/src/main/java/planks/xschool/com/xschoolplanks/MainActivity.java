@@ -30,6 +30,7 @@ import java.util.List;
 
 import planks.xschool.com.xschoolplanks.model.User;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
@@ -62,16 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                if(status) {
-                    HudFragment hudFragment = new HudFragment();
-                    fragmentTransaction.add(R.id.rl_hud_id, hudFragment);
-                    //TODO transactionMov
-                    fragmentTransaction.commit();
-                    toastShort("Hud Open");
-                    status = false;
-                }else{
-                    status = true;
-                }
             }
         });
 
