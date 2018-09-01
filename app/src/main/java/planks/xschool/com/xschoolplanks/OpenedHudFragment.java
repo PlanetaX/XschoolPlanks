@@ -29,7 +29,8 @@ public class OpenedHudFragment extends Fragment {
     OnClickHud clickHud;
     public interface OnClickHud {
 
-         void OnHudClicked();
+         void OnHomePageClicked();
+         void OnSeccondClicked();
     }
 
 
@@ -45,12 +46,16 @@ public class OpenedHudFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_opened_hud, container, false);
         texto = (TextView) view.findViewById(R.id.tv_texto);
 
+        //Primeira opção (Página inicial)
         texto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                clickHud.OnHudClicked();
+                clickHud.OnHomePageClicked();
             }
         });
+
+        //Segunda
+        //...
         return view;
     }
 

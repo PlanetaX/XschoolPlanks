@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
 
 
     @Override
-    public void OnHudClicked() {
+    public void OnHomePageClicked() {
         /* TODO OnClickHud
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -107,4 +107,10 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         fragmentTransaction.commit();
         */
     }
+
+    @Override
+    public void OnSeccondClicked() {
+
+    }
+
 }
