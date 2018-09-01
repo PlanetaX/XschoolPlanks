@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HudOpenFragment extends Fragment {
+public class HudFragment extends Fragment {
 
 
-    public HudOpenFragment() {
+    public HudFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class HudOpenFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hud_open, container, false);
+        return inflater.inflate(R.layout.fragment_hud, container, false);
     }
 
 }

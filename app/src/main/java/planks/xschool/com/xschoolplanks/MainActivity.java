@@ -58,41 +58,12 @@ public class MainActivity extends AppCompatActivity {
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                hud.setText("HUDE");
                 FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-                HudOpenFragment hudFragment = new HudOpenFragment();
-
-                //fragmentTransaction.add(, hudFragment);
-                fragmentTransaction.commit();
+                
             }
         });
 
-
-        //FRAGMENTO EXEMPLO
-        /*
-        hud.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-                if(status) {
-                    LoginFragment loginFragment = new LoginFragment();
-                    fragmentTransaction.add(R.id.rl_container_fragmento, loginFragment);
-                    fragmentTransaction.commit();
-                    login.setText("Cadastre-se");
-                    status = false;
-                }else {
-                    CadastroFragment cadastroFragment = new CadastroFragment();
-                    fragmentTransaction.add(R.id.rl_container_fragmento, cadastroFragment);
-                    fragmentTransaction.commit();
-                    login.setText("Logar");
-                    status = true;
-                }
-            }
-        });
-        */
 
 
         //FIREBASE EXAMPLE
