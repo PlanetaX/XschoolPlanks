@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
     private TextView hud; //Botão hud
+    private TextView tv;
     private boolean status = true;
 
 
@@ -54,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         //TODO checkOnline();
         //Esse método deverá checar se o usuário está conectado na internet
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
-
 
 
         hud.setOnClickListener(new View.OnClickListener() {
