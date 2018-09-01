@@ -34,9 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
-    private RelativeLayout rl_hud;
     private TextView hud; //Botão hud
-    //private TextView option01; //Hud em si deve ser ListView c/adapter
     private boolean status = true;
 
 
@@ -45,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
+        //rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
         hud = (TextView) findViewById(R.id.hud);
 
         //TODO checkUser();
@@ -60,7 +58,13 @@ public class MainActivity extends AppCompatActivity {
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO OpenHud();
+                openHud();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                HudFragment hudFragment = new HudFragment();
+
+                fragmentTransaction.add(R.id.rl_hud_id, hudFragment);
             }
         });
 
@@ -107,6 +111,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openHud(){
-        FragmentManager fragmentManager = getSupportFragmentManager();
+
     }
 }
