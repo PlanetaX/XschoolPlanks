@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
                     fragmentTransaction.commit();
                     status = false;
                 } else {
-                    ClosedHudFragment closedHudFragment = new ClosedHudFragment();
-                    fragmentTransaction.add(R.id.rl_hud_id, closedHudFragment);
+                    Fragment fragment = fragmentManager.findFragmentById(R.id.rl_hud_id);
+                    fragmentTransaction.remove(fragment);
                     fragmentTransaction.commit();
                     status = true;
                 }
