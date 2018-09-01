@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //rl_hud = (RelativeLayout) findViewById(R.id.rl_hud_id);
         hud = (TextView) findViewById(R.id.hud);
 
         //TODO checkUser();
@@ -55,16 +54,17 @@ public class MainActivity extends AppCompatActivity {
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
 
 
+
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openHud();
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                HudFragment hudFragment = new HudFragment();
+                HudOpenFragment hudFragment = new HudOpenFragment();
 
-                fragmentTransaction.add(R.id.rl_hud_id, hudFragment);
+                //fragmentTransaction.add(, hudFragment);
+                fragmentTransaction.commit();
             }
         });
 
@@ -110,7 +110,4 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
     }
 
-    private void openHud(){
-
-    }
 }

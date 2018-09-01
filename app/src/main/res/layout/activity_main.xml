@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:id="@+id/rl_rl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/back"
@@ -87,10 +88,10 @@
             android:id="@+id/rl_hud_id"
             android:layout_width="175dp"
             android:layout_height="269dp"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginBottom="144dp"
-            android:layout_marginEnd="14dp">
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginTop="136dp">
 
         </RelativeLayout>
 
