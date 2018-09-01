@@ -3,6 +3,7 @@ package planks.xschool.com.xschoolplanks;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -31,7 +32,7 @@ import java.util.List;
 import planks.xschool.com.xschoolplanks.model.User;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OpenedHudFragment.OnClickHud{
 
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
@@ -56,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         //Esse método deverá checar se o usuário está conectado na internet
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
 
-
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,11 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 */
                 if(status){
                     OpenedHudFragment openedHudFragment = new OpenedHudFragment();
-                    fragmentTransaction.add(R.id.rl_hud_id, openedHudFragment);
+                    fragmentTransaction.add(R.id.fl_hud_id, openedHudFragment, null);
                     fragmentTransaction.commit();
                     status = false;
                 } else {
-                    Fragment fragment = fragmentManager.findFragmentById(R.id.rl_hud_id);
+                    Fragment fragment = fragmentManager.findFragmentById(R.id.fl_hud_id);
                     fragmentTransaction.remove(fragment);
                     fragmentTransaction.commit();
                     status = true;
@@ -96,4 +96,15 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
     }
 
+
+    @Override
+    public void OnHudClicked() {
+        /* TODO OnClickHud
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        OpenedHudFragment openedHudFragment = new OpenedHudFragment();
+        fragmentTransaction.add(R.id.floss, openedHudFragment, null);
+        fragmentTransaction.commit();
+        */
+    }
 }

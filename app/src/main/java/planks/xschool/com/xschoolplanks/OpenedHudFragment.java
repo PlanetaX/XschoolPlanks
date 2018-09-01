@@ -1,6 +1,8 @@
 package planks.xschool.com.xschoolplanks;
 
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -21,8 +23,15 @@ import planks.xschool.com.xschoolplanks.model.User;
  */
 public class OpenedHudFragment extends Fragment {
 
+
     public TextView texto;
-    RelativeLayout rl;
+
+    OnClickHud clickHud;
+    public interface OnClickHud {
+
+         void OnHudClicked();
+    }
+
 
     public OpenedHudFragment() {
         // Required empty public constructor
@@ -39,9 +48,19 @@ public class OpenedHudFragment extends Fragment {
         texto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                clickHud.OnHudClicked();
             }
         });
         return view;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        Activity activity = (Activity) context;
+
+        clickHud = (OnClickHud) activity;
     }
 
 }
