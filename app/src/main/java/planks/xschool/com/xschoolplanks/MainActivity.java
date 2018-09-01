@@ -62,6 +62,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                /*
+                */
+                if(status){
+                    OpenedHudFragment openedHudFragment = new OpenedHudFragment();
+                    fragmentTransaction.add(R.id.rl_hud_id, openedHudFragment);
+                    fragmentTransaction.commit();
+                    status = false;
+                } else {
+                    ClosedHudFragment closedHudFragment = new ClosedHudFragment();
+                    fragmentTransaction.add(R.id.rl_hud_id, closedHudFragment);
+                    fragmentTransaction.commit();
+                    status = true;
+                }
 
             }
         });
