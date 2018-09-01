@@ -99,18 +99,35 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
 
     @Override
     public void OnHomePageClicked() {
-        /* TODO OnClickHud
+        /* TODO HomePageLinked
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        OpenedHudFragment openedHudFragment = new OpenedHudFragment();
-        fragmentTransaction.add(R.id.floss, openedHudFragment, null);
+        FragmentNome fragmentNome = new FragmentNome();
+        fragmentTransaction.add(R.id...., fragmentNome, null);
+        fragmentTransaction.commit();
+
+        //Para fechar o Hud
+        Fragment fragment = fragmentManager.findFragmentById(R.id.fl_hud_id);
+        fragmentTransaction.remove(fragment);
         fragmentTransaction.commit();
         */
+        toastShort("Você clicou na tela inicial");
     }
 
     @Override
     public void OnSeccondClicked() {
+        /* TODO SecondOptionLinked
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        FragmentNome fragmentNome = new FragmentNome();
+        fragmentTransaction.add(R.id...., fragmentNome, null);
+        fragmentTransaction.commit();
 
+        //Para fechar o Hud
+        Fragment fragment = fragmentManager.findFragmentById(R.id.fl_hud_id);
+        fragmentTransaction.remove(fragment);
+        fragmentTransaction.commit();
+        */
     }
 
 }
