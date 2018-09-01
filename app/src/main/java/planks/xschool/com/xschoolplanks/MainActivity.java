@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentHostCallback;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
@@ -58,9 +59,19 @@ public class MainActivity extends AppCompatActivity {
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                hud.setText("HUDE");
                 FragmentManager fragmentManager = getSupportFragmentManager();
-                
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                if(status) {
+                    HudFragment hudFragment = new HudFragment();
+                    fragmentTransaction.add(R.id.rl_hud_id, hudFragment);
+                    //TODO transactionMov
+                    fragmentTransaction.commit();
+                    toastShort("Hud Open");
+                    status = false;
+                }else{
+                    status = true;
+                }
             }
         });
 
