@@ -97,6 +97,8 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
     }
 
 
+
+    //OPÇÕES DO HUD
     @Override
     public void OnHomePageClicked() {
         /* TODO HomePageLinked
@@ -127,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         Fragment fragment = fragmentManager.findFragmentById(R.id.fl_hud_id);
         fragmentTransaction.remove(fragment);
         fragmentTransaction.commit();
-        
+
         */
     }
 

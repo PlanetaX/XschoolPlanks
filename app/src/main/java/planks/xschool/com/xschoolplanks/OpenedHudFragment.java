@@ -31,6 +31,7 @@ public class OpenedHudFragment extends Fragment {
 
          void OnHomePageClicked();
          void OnSeccondClicked();
+         //void OnThirdClicked();
     }
 
 
