@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Link Id com Variáveis
         hud = (TextView) findViewById(R.id.hud);
 
         //TODO checkUser();
@@ -57,13 +58,13 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         //Esse método deverá checar se o usuário está conectado na internet
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
 
+
+        //HudButton
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                /*
-                */
                 if(status){
                     OpenedHudFragment openedHudFragment = new OpenedHudFragment();
                     fragmentTransaction.add(R.id.fl_hud_id, openedHudFragment, null);
@@ -92,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
 
     }
 
+    //Método Toast
     public void toastShort(String str){
         Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
     }
