@@ -127,6 +127,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         Fragment fragment = fragmentManager.findFragmentById(R.id.fl_hud_id);
         fragmentTransaction.remove(fragment);
         fragmentTransaction.commit();
+        
         */
     }
 
