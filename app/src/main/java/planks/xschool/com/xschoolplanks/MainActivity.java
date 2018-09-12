@@ -121,6 +121,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
     @Override
     public void OnSeccondClicked() {
         /* TODO SecondOptionLinked
+        
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         FragmentNome fragmentNome = new FragmentNome();
