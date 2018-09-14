@@ -65,8 +65,6 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
             }
         });
 
-
-
         //FIREBASE EXAMPLE
         /*
         User user = new User();
@@ -117,6 +115,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         fragmentTransaction.remove(fragment);
         fragmentTransaction.commit();
         */
+
         toastShort("Você clicou na tela de Criação de Planks");
     }
 
