@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         //TODO checkOnline();
         //Esse método deverá checar se o usuário está conectado na internet
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
+        //if(do:homePage) else(do:savedPlanks)
 
 
         //HudButton
@@ -108,14 +109,14 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         CreatePlankFragment createPlankFragment = new CreatePlankFragment();
-        fragmentTransaction.add(R.id.fl_back_id, createPlankFragment, null);
+        fragmentTransaction.add(R.id.fl_back_id, createPlankFragment);
         fragmentTransaction.commit();
 
-        //Para fechar o Hud
+        /*//Para fechar o Hud
         Fragment fragment = fragmentManager.findFragmentById(R.id.fl_hud_id);
         fragmentTransaction.remove(fragment);
         fragmentTransaction.commit();
-
+        */
         toastShort("Você clicou na tela de Criação de Planks");
     }
 
