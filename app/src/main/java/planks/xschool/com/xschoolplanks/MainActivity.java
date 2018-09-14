@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
 
 
     //OPÇÕES DO HUD
+
     @Override
     public void OnHomePageClicked() {
         /* TODO HomePageLinked
@@ -109,12 +110,6 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         CreatePlankFragment createPlankFragment = new CreatePlankFragment();
         fragmentTransaction.add(R.id.fl_back_id, createPlankFragment);
         fragmentTransaction.commit();
-
-        /*//Para fechar o Hud
-        Fragment fragment = fragmentManager.findFragmentById(R.id.fl_hud_id);
-        fragmentTransaction.remove(fragment);
-        fragmentTransaction.commit();
-        */
 
         toastShort("Você clicou na tela de Criação de Planks");
     }
