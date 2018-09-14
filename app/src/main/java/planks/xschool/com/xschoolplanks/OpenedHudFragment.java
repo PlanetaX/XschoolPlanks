@@ -24,13 +24,14 @@ import planks.xschool.com.xschoolplanks.model.User;
 public class OpenedHudFragment extends Fragment {
 
 
-    public TextView texto;
+    public TextView homepage;
+    private TextView createPlank;
 
     OnClickHud clickHud;
     public interface OnClickHud {
 
          void OnHomePageClicked();
-         void OnSeccondClicked();
+         void OnCreatePlankClicked();
          //void OnThirdClicked();
     }
 
@@ -45,18 +46,27 @@ public class OpenedHudFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_opened_hud, container, false);
-        texto = (TextView) view.findViewById(R.id.tv_texto);
+        homepage = (TextView) view.findViewById(R.id.tv_texto);
+        createPlank = (TextView) view.findViewById(R.id.tv_second);
+
 
         //Primeira opção (Página inicial)
-        texto.setOnClickListener(new View.OnClickListener() {
+        homepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 clickHud.OnHomePageClicked();
             }
         });
 
-        //Segunda
-        //...
+        //Segunda opção (Criar Plank)
+        createPlank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clickHud.OnCreatePlankClicked();
+            }
+        });
+
+        //Terceira
         return view;
     }
 

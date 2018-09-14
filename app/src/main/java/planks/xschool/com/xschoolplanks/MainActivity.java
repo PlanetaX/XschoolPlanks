@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
     }
 
     @Override
-    public void OnSeccondClicked() {
+    public void OnCreatePlankClicked() {
         /* TODO SecondOptionLinked
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
