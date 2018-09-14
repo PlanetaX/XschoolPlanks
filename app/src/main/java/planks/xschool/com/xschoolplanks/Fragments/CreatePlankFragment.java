@@ -1,11 +1,14 @@
-package planks.xschool.com.xschoolplanks;
+package planks.xschool.com.xschoolplanks.Fragments;
 
 
 import android.os.Bundle;
-import android.app.Fragment;
+
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import planks.xschool.com.xschoolplanks.R;
 
 
 /**

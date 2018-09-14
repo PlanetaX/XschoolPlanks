@@ -85,7 +85,7 @@
         </RelativeLayout>
 
         <FrameLayout
-            android:id="@+id/rl_back_id"
+            android:id="@+id/fl_back_id"
             android:layout_width="match_parent"
             android:layout_height="473dp">
 
