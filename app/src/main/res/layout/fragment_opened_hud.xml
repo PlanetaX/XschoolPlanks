@@ -10,7 +10,9 @@
     <RelativeLayout
         android:layout_width="197dp"
         android:layout_height="281dp"
-        android:background="#ffffff">
+        android:background="#ffffff"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="4dp">
 
         <TextView
             android:id="@+id/tv_texto"
@@ -32,7 +34,19 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="88dp"
-            android:text="Create Plank"
+            android:text="Criar Plank"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="112dp"
+            android:text="Perfil"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
