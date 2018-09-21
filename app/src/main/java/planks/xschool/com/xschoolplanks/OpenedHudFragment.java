@@ -46,6 +46,8 @@ public class OpenedHudFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_opened_hud, container, false);
+
+        //TODO Adapter ListView<>Hud
         homepage = (TextView) view.findViewById(R.id.tv_texto);
         createPlank = (TextView) view.findViewById(R.id.tv_second);
 
