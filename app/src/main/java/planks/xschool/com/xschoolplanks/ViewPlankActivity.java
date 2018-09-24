@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 public class ViewPlankActivity extends AppCompatActivity {
 
-    /*
+    /*TODO this
     StoriesProgressView storiesProgressView;
     ImageView ImageView;
 
