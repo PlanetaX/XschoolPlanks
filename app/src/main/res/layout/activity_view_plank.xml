@@ -7,19 +7,19 @@
     tools:context=".ViewPlankActivity">
 
 
-<ImageView
+<!--ImageView
     android:id=@+id/image"
     android:contentDescription=@null"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent" /-->
 
-    <jp.shts.android.storiesprogressview.StoriesProgressView
+    <!--jp.shts.android.storiesprogressview.StoriesProgressView
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:id="@+id/stories"
         android:layout_alignParentTop="true"
         android:layout_marginTop="8dp"
-        />
+        /-->
 
 
 </RelativeLayout>

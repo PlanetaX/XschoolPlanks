@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 public class ViewPlankActivity extends AppCompatActivity {
 
+    /*
     StoriesProgressView storiesProgressView;
     ImageView ImageView;
 
@@ -55,6 +56,6 @@ public class ViewPlankActivity extends AppCompatActivity {
     protected void onDestroy() {
         storiesProgressView.destroy();
         super.onDestroy();
-     }
+     }*/
 
 }
