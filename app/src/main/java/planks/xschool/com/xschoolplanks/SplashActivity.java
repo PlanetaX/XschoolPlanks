@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SplahActivity extends Activity {
+public class SplashActivity extends Activity {
 
     private static int SPLASH_TIME_OUT = 2000; //Milliseconds
     //2000 ms = 2'
