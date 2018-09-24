@@ -31,9 +31,8 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView2"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="262dp"
             android:text="Planks"
             android:textColor="#1eacd2"
             android:textSize="18sp" />
