@@ -1,4 +1,4 @@
-package planks.xschool.com.xschoolplanks;
+package planks.xschool.com.xschoolplanks.Fragments;
 
 
 import android.app.Activity;
@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import planks.xschool.com.xschoolplanks.R;
 import planks.xschool.com.xschoolplanks.model.User;
 
 

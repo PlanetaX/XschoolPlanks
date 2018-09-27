@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import planks.xschool.com.xschoolplanks.OpenedHudFragment;
 import planks.xschool.com.xschoolplanks.R;
 
 
@@ -20,7 +19,7 @@ import planks.xschool.com.xschoolplanks.R;
  */
 public class CreatePlankFragment extends Fragment {
 
-    private Button jb;
+    private Button add;
     OnClickBut clickButton;
     public interface OnClickBut {
 
@@ -37,9 +36,9 @@ public class CreatePlankFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_create_plank, container, false);
         // Inflate the layout for this fragment
-        jb = (Button) view.findViewById(R.id.button);
+        add = (Button) view.findViewById(R.id.btn_add);
 
-        jb.setOnClickListener(new View.OnClickListener() {
+        add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 clickButton.OnNextClicked();

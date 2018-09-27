@@ -14,6 +14,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import planks.xschool.com.xschoolplanks.Fragments.CreatePlankFragment;
+import planks.xschool.com.xschoolplanks.Fragments.OpenedHudFragment;
 
 
 public class MainActivity extends AppCompatActivity implements OpenedHudFragment.OnClickHud, CreatePlankFragment.OnClickBut {
@@ -84,7 +85,6 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
 
 
     //OPÇÕES DO HUD
-
     @Override
     public void OnHomePageClicked() {
         /* TODO HomePageLinked
@@ -115,6 +115,24 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         toastShort("Você clicou na tela de Criação de Planks");
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //OPÇÕES DO CREATE PLANKS
     @Override
     public void OnNextClicked() {
         /*
@@ -123,7 +141,6 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         CreatePlankFragment createPlankFragment = new CreatePlankFragment();
         fragmentTransaction.add(R.id.fl_back_id, createPlankFragment);
         fragmentTransaction.commit();
-
         */
         toastShort("Você clicou no adicionar planks");
     }
