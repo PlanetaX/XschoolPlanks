@@ -19,12 +19,13 @@ import planks.xschool.com.xschoolplanks.R;
  */
 public class CreatePlankFragment extends Fragment {
 
-    private Button add;
+    private Button next;
     OnClickBut clickButton;
     public interface OnClickBut {
 
         void OnNextClicked();
-        //void OnThirdClicked();
+        void OnDeleteClicked();
+        void OnAddClicked();
     }
     public CreatePlankFragment() {
         // Required empty public constructor
@@ -36,9 +37,9 @@ public class CreatePlankFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_create_plank, container, false);
         // Inflate the layout for this fragment
-        add = (Button) view.findViewById(R.id.btn_add);
+        next = (Button) view.findViewById(R.id.btn_next);
 
-        add.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 clickButton.OnNextClicked();

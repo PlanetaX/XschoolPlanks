@@ -144,4 +144,14 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         */
         toastShort("Você clicou no adicionar planks");
     }
+
+    @Override
+    public void OnDeleteClicked() {
+        
+    }
+
+    @Override
+    public void OnAddClicked() {
+
+    }
 }
