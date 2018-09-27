@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import planks.xschool.com.xschoolplanks.Fragments.CreatePlankFragment;
 
 
-public class MainActivity extends AppCompatActivity implements OpenedHudFragment.OnClickHud{
+public class MainActivity extends AppCompatActivity implements OpenedHudFragment.OnClickHud, CreatePlankFragment.OnClickBut {
 
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
@@ -115,4 +115,16 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         toastShort("Você clicou na tela de Criação de Planks");
     }
 
+    @Override
+    public void OnNextClicked() {
+        /*
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        CreatePlankFragment createPlankFragment = new CreatePlankFragment();
+        fragmentTransaction.add(R.id.fl_back_id, createPlankFragment);
+        fragmentTransaction.commit();
+
+        */
+        toastShort("Você clicou no adicionar planks");
+    }
 }
