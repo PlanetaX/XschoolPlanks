@@ -18,6 +18,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
+        <FrameLayout
+            android:id="@+id/fl_back_id"
+            android:layout_width="match_parent"
+            android:layout_height="473dp">
+
+        </FrameLayout>
+
         <RelativeLayout
             android:id="@+id/rl_menu_id"
             android:layout_width="match_parent"
@@ -83,13 +90,6 @@
                 android:textStyle="bold" />
 
         </RelativeLayout>
-
-        <FrameLayout
-            android:id="@+id/fl_back_id"
-            android:layout_width="match_parent"
-            android:layout_height="473dp">
-
-        </FrameLayout>
 
         <FrameLayout
             android:id="@+id/fl_hud_id"
