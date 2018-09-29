@@ -138,10 +138,11 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         /*
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        CreatePlankFragment createPlankFragment = new CreatePlankFragment();
-        fragmentTransaction.add(R.id.fl_back_id, createPlankFragment);
+        TestFragment testFragment = new TestFragment();
+        fragmentTransaction.add(R.id.fl_back_id, testFragment);
         fragmentTransaction.commit();
         */
+
         toastShort("Você clicou no adicionar planks");
     }
 
