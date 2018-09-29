@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
 
     @Override
     public void OnDeleteClicked() {
-        
+
     }
 
     @Override
