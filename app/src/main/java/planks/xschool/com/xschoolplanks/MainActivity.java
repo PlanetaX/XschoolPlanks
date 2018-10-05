@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
+    //TODO declarations
     private TextView hud; //Botão hud
     private TextView tv;
     private boolean status = true;
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         setContentView(R.layout.activity_main);
 
         //Link Id com Variáveis
+        //TODO HudImgBtn
+        //Hud shall be photo, then, imgBtn
         hud = (TextView) findViewById(R.id.hud);
 
         //TODO checkUser();
@@ -115,12 +118,6 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
 
         toastShort("Você clicou na tela de Criação de Planks");
     }
-
-
-
-
-
-
 
 
 
