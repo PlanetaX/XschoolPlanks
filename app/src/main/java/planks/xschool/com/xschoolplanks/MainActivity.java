@@ -20,7 +20,6 @@ import planks.xschool.com.xschoolplanks.Fragments.OpenedHudFragment;
 public class MainActivity extends AppCompatActivity implements OpenedHudFragment.OnClickHud, CreatePlankFragment.OnClickBut {
 
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-    
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
     private TextView hud; //Botão hud
