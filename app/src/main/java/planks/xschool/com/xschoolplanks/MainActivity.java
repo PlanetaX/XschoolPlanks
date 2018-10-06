@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
 
 
 
-    //OPÇÕES DO HUD
+    //OPÇÕES DO OPENHUD - INTERFACE
     @Override
     public void OnHomePageClicked() {
         /* TODO HomePageLinked
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
 
 
 
-    //OPÇÕES DO CREATE PLANKS
+    //OPÇÕES DO CREATE PLANKS - INTERFACE
     @Override
     public void OnNextClicked() {
         /*
