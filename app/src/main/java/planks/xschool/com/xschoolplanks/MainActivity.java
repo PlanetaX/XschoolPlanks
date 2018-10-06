@@ -17,14 +17,22 @@ import planks.xschool.com.xschoolplanks.Fragments.CreatePlankFragment;
 import planks.xschool.com.xschoolplanks.Fragments.OpenedHudFragment;
 
 
-public class MainActivity extends AppCompatActivity implements OpenedHudFragment.OnClickHud, CreatePlankFragment.OnClickBut {
+public class MainActivity extends AppCompatActivity
+        implements OpenedHudFragment.OnClickHud, CreatePlankFragment.OnClickBut {
 
+    //TODO DatabaseReferences
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
-    //TODO declarations
+    //TODO ALL declarations
+    //TextViews
     private TextView hud; //Botão hud
-    private TextView tv;
+    private TextView tv_tpCoins;
+
+    //Integers
+    private int tpCoins;
+
+    //Booleans
     private boolean status = true;
 
 
@@ -33,10 +41,11 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Link Id com Variáveis
         //TODO HudImgBtn
         //Hud shall be photo, then, imgBtn
+
         hud = (TextView) findViewById(R.id.hud);
+        tv_tpCoins = (TextView) findViewById(R.id.tv_coins_source);
 
         //TODO checkUser();
         //Esse método deverá checar se o usuário está logado no planks
@@ -47,11 +56,18 @@ public class MainActivity extends AppCompatActivity implements OpenedHudFragment
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
         //if(do:homePage) else(do:savedPlanks)
 
+        tpCoins = 100;
+        String tpCoinsString = String.valueOf(tpCoins);
 
-        //HudButton
+        //Atribuíção de valor ao TextView do TP
+        //Deve receber os dados do Shared Preferences
+        tv_tpCoins.setText(tpCoinsString);
+
+        //HudButton <OnClick>
         hud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 if(status){
