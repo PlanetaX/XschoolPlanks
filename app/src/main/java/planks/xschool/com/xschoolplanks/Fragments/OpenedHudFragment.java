@@ -24,9 +24,11 @@ import planks.xschool.com.xschoolplanks.model.User;
  */
 public class OpenedHudFragment extends Fragment {
 
-
+    //TextViews
     public TextView homepage;
     private TextView createPlank;
+
+    //ListViews
 
     OnClickHud clickHud;
     public interface OnClickHud {
