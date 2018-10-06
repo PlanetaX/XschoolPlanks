@@ -28,9 +28,11 @@ public class MainActivity extends AppCompatActivity
     //TextViews
     private TextView hud; //Botão hud
     private TextView tv_tpCoins;
+    private TextView tv_metascore;
 
     //Integers
     private int tpCoins;
+    private int uMetaScore;
 
     //Booleans
     private boolean status = true;
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity
 
         hud = (TextView) findViewById(R.id.hud);
         tv_tpCoins = (TextView) findViewById(R.id.tv_coins_source);
+        tv_metascore = (TextView) findViewById(R.id.tv_meta_source);
 
         //TODO checkUser();
         //Esse método deverá checar se o usuário está logado no planks
@@ -56,12 +59,17 @@ public class MainActivity extends AppCompatActivity
         //Se não estiver, iniciar modo offline, se estiver logado + offline, deve abrir fragment planks_salvos
         //if(do:homePage) else(do:savedPlanks)
 
-        tpCoins = 100;
-        String tpCoinsString = String.valueOf(tpCoins);
-
         //Atribuíção de valor ao TextView do TP
         //Deve receber os dados do Shared Preferences
+        tpCoins = 100;
+        String tpCoinsString = String.valueOf(tpCoins);
         tv_tpCoins.setText(tpCoinsString);
+
+        //Atribuíção de valor ao TextView do UserMetascore
+        //Deve receber os dados do Shared Preferences
+        uMetaScore = 95;
+        String uMetaScoreString = String.valueOf(uMetaScore);
+        tv_metascore.setText(uMetaScoreString);
 
         //HudButton <OnClick>
         hud.setOnClickListener(new View.OnClickListener() {
