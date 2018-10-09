@@ -3,6 +3,7 @@ package planks.xschool.com.xschoolplanks.Fragments;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import planks.xschool.com.xschoolplanks.R;
+import planks.xschool.com.xschoolplanks.ViewPlanksActivity;
 
 
 /**

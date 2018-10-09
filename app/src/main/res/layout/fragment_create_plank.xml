@@ -39,5 +39,6 @@
             android:layout_alignTop="@+id/btn_next"
             android:layout_marginStart="49dp"
             android:text="Delete" />
+
     </RelativeLayout>
 </FrameLayout>
