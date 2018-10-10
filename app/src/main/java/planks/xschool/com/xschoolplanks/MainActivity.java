@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
         implements OpenedHudFragment.OnClickHud, CreatePlankFragment.OnClickBut {
 
     //TODO DatabaseReferences
-    private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+    //private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     //private DatabaseReference userRef  = reference.child("Database").child("Users");
 
     //TODO ALL declarations
