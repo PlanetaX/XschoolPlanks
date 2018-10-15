@@ -27,7 +27,7 @@
             android:layout_marginBottom="2dp"
             android:background="#282828">
 
-            <TextView
+            //<TextView
                 android:id="@+id/hud"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
 
 
 
-        <FrameLayout
+        //<FrameLayout
             android:id="@+id/fl_hud_id"
             android:layout_width="197dp"
             android:layout_height="281dp"
