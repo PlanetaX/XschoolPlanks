@@ -10,7 +10,7 @@
         android:id="@+id/rl_rl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/back"
+        android:background="#282828"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -18,44 +18,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <FrameLayout
-            android:id="@+id/fl_back_id"
-            android:layout_width="match_parent"
-            android:layout_height="473dp">
 
-        </FrameLayout>
-
-        <RelativeLayout
+        //<RelativeLayout
             android:id="@+id/rl_menu_id"
             android:layout_width="match_parent"
-            android:layout_height="94dp"
+            android:layout_height="42dp"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorPrimary">
+            android:layout_marginBottom="2dp"
+            android:background="#282828">
 
-            <TextView
-                android:id="@+id/tv_meta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/hud"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="31dp"
-                android:text="Metascore"
-                android:textColor="@color/colorGreen"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tv_meta_source"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="45dp"
-                android:text="90"
-                android:textColor="@android:color/white"
-                android:textSize="36sp"
-                android:textStyle="bold" />
-
-            <TextView
+            //<TextView
                 android:id="@+id/hud"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,32 +39,30 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_coins"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignTop="@+id/tv_meta"
-                android:layout_marginStart="146dp"
-                android:text="TP"
-                android:textColor="@color/colorOrange"
-                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_coins_source"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="123dp"
-                android:text="150"
-                android:textColor="@color/colorWhite"
-                android:textSize="36sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
+        //</RelativeLayout>
 
         <FrameLayout
+            android:id="@+id/fl_back_id"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_above="@+id/rl_menu_id"
+            android:layout_marginBottom="-72dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="375dp"
+                app:srcCompat="@drawable/basesob" />
+
+            
+
+        </FrameLayout>
+
+
+
+        //<FrameLayout
             android:id="@+id/fl_hud_id"
             android:layout_width="197dp"
             android:layout_height="281dp"
@@ -103,7 +73,20 @@
 
         </FrameLayout>
 
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/basesobre" />
+
+
     </RelativeLayout>
-	
+
 
 </android.support.constraint.ConstraintLayout>
