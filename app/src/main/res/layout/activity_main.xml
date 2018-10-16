@@ -45,24 +45,26 @@
         <FrameLayout
             android:id="@+id/fl_back_id"
             android:layout_width="match_parent"
-            android:layout_height="473dp"
+            android:layout_height="534dp"
             android:layout_above="@+id/rl_menu_id"
             android:layout_marginBottom="-72dp">
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="375dp"
-                app:srcCompat="@drawable/basesob" />
-
-            
 
         </FrameLayout>
 
 
 
-        //<FrameLayout
+        //
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            app:srcCompat="@drawable/basesob" />
+
+        <FrameLayout
             android:id="@+id/fl_hud_id"
             android:layout_width="197dp"
             android:layout_height="281dp"

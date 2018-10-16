@@ -68,13 +68,13 @@ public class MainActivity extends AppCompatActivity
         //Deve receber os dados do Shared Preferences
         tpCoins = 100;
         String tpCoinsString = String.valueOf(tpCoins);
-        tv_tpCoins.setText(tpCoinsString);
+        //tv_tpCoins.setText(tpCoinsString);
 
         //Atribuíção de valor ao TextView do UserMetascore
         //Deve receber os dados do Shared Preferences
         uMetaScore = 95;
         String uMetaScoreString = String.valueOf(uMetaScore);
-        tv_metascore.setText(uMetaScoreString);
+        //tv_metascore.setText(uMetaScoreString);
 
         //HudButton <OnClick>
         hud.setOnClickListener(new View.OnClickListener() {
