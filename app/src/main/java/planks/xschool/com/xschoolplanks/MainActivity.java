@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity
         //Hud shall be photo, then, imgBtn
 
         hud = (TextView) findViewById(R.id.hud);
-        tv_tpCoins = (TextView) findViewById(R.id.tv_coins_source);
-        tv_metascore = (TextView) findViewById(R.id.tv_meta_source);
+        //tv_tpCoins = (TextView) findViewById(R.id.tv_coins_source);
+        //tv_metascore = (TextView) findViewById(R.id.tv_meta_source);
 
         //TODO checkUser();
         //Esse método deverá checar se o usuário está logado no planks
