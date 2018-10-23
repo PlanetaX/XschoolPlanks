@@ -43,5 +43,14 @@
             android:layout_marginBottom="74dp"
             android:text="Delete" />
 
+        <RelativeLayout
+            android:layout_width="85dp"
+            android:layout_height="131dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btn_next"
+            android:layout_marginTop="54dp">
+
+        </RelativeLayout>
+
     </RelativeLayout>
 </FrameLayout>
