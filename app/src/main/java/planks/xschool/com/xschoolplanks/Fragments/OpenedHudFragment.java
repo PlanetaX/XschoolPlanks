@@ -27,6 +27,7 @@ public class OpenedHudFragment extends Fragment {
     //TextViews
     public TextView homepage;
     private TextView createPlank;
+    private TextView tv_hud_perfil;
 
     //ListViews
 
@@ -53,7 +54,15 @@ public class OpenedHudFragment extends Fragment {
         //TODO Adapter ListView<>Hud
         homepage = (TextView) view.findViewById(R.id.tv_texto);
         createPlank = (TextView) view.findViewById(R.id.tv_second);
+        tv_hud_perfil = (TextView) view.findViewById(R.id.tv_hud_perfil);
 
+        //TODO checkUser();
+        //Seguir escopo abaixo
+        if(true){
+                tv_hud_perfil.setText("Logar");
+        }else{
+            tv_hud_perfil.setText("Perfil");
+        }
 
         //Primeira opção (Página inicial)
         homepage.setOnClickListener(new View.OnClickListener() {
