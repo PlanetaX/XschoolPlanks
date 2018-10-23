@@ -11,7 +11,7 @@
     <RelativeLayout
         android:layout_width="197dp"
         android:layout_height="400dp"
-        android:background="#ffffff"
+        android:background="@android:color/transparent"
         tools:layout_editor_absoluteY="60dp">
 
         <TextView
