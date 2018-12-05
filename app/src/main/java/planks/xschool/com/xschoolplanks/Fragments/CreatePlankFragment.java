@@ -29,6 +29,7 @@ public class CreatePlankFragment extends Fragment {
         void OnDeleteClicked();
         void OnAddClicked();
     }
+    
     public CreatePlankFragment() {
         // Required empty public constructor
     }
