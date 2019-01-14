@@ -44,9 +44,8 @@
         <FrameLayout
             android:id="@+id/fl_back_id"
             android:layout_width="match_parent"
-            android:layout_height="534dp"
-            android:layout_above="@+id/rl_menu_id"
-            android:layout_marginBottom="-72dp">
+            android:layout_height="430dp"
+            android:layout_below="@+id/imageView5">
 
 
         </FrameLayout>
