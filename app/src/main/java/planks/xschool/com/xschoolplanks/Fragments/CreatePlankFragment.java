@@ -26,8 +26,9 @@ public class CreatePlankFragment extends Fragment {
     public interface OnClickBut {
 
         void OnNextClicked();
-        void OnDeleteClicked();
         void OnAddClicked();
+        void OnDeleteClicked();
+
     }
 
     public CreatePlankFragment() {
